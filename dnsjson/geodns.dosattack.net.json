@@ -1,0 +1,32 @@
+{ "serial": 3,
+  "ttl":    10,
+  "targeting": "country continent @ regiongroup region ip asn",
+  "data" : {
+    "":  {
+	"a": [ ["172.106.22.69"] ],
+	"ns": { "ns1.dosattack.net.": null}
+    },
+   "ns1": {
+      "a": [ [ "45.35.65.50" ] ]
+   },
+    "bar.north-america": { "a": [ ["8.8.6.6"] ], "txt": "This is for North America traffic." },
+    "bar.us": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA traffic." },
+    "bar.us-west": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA West Coast traffic." },
+    "bar.us-central": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA Central traffic." },
+    "bar.us-east": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA East Coast traffic." },
+    "bar.us-ca": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA California traffic." },
+    "bar.europe": { "a": [ ["8.8.4.4"] ], "txt": "This is for EU traffic." },
+    "bar.as7922": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for Comcast traffic." },
+    "bar.as33651": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for Comcast traffic." },
+    "bar.[73.223.157.249]": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for 73.223.157.249" },
+    "bar": { "a": [ ["8.8.8.8"] ], "txt": "Default lol" },
+    "www": {
+      "alias": "",
+      "txt": "This is default traffic."
+    },
+    "www.europe": {
+      "alias": "",
+      "txt": "This is for EU traffic."
+    }
+  }
+}

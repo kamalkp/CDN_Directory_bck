@@ -1,0 +1,11 @@
+
+server {
+	listen      80 ;
+	#listen      443 ;
+	server_name "";
+
+	return location ~* { root /usr/local/nginx/html ; try_files $uri /suspend.html break ;} 
+
+
+}
+

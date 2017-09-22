@@ -1,0 +1,187 @@
+body {
+	margin:0;
+	padding:0;
+}
+body, select, input {
+	color:#fff;
+	font-size:16px;
+	line-height:26px;
+	font-family: 'Montserrat', sans-serif;
+}
+img {
+	border:none;
+}
+::-moz-selection  {
+    color: #fff;
+    background:#000;
+}
+::selection {
+    color: #fff;
+    background:#000;
+}
+figure{
+	margin:0;
+}
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+a {
+	outline:none;
+	color:#dddddd;
+	text-decoration:none;
+}
+a:hover {
+	outline: none;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+	text-decoration: underline;
+}
+.error-box{
+	padding: 62px 0 0;
+	background: #2eaef3;
+}
+.error-box h1{
+	margin: 0;
+	font-size: 130px;
+	line-height: 130px;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 500;
+	letter-spacing: -3px;
+}
+.error-box h1 span{
+	font-size: 100px;
+	letter-spacing:normal;
+}
+.error-box .gateway{
+	font-size: 30px;
+	line-height: 36px;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 500;
+	margin: 55px 0 0 10px;
+}
+.error-box .gateway span{
+	display: block;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 200;
+}
+.box1{
+	float: left;
+	width: 100%;
+	margin: 65px 0;
+}
+.small-box{
+	width: 286px;
+	height: 255px;
+	margin: 0 196px 0 0 ;
+	padding: 0 0 30px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border: 10px solid #fff;
+	border-radius: 8px;
+}
+.small-box figure{
+	margin: 36px 0 30px;
+}
+.small-box h4{
+	margin: 0;
+}
+.small-box .checkmark,
+.small-box2 .close{
+	right: -50px;
+	top: 72px;
+	opacity: 1;
+	position:absolute;
+}
+.small-box:after{
+	top: 88px;
+	width: 75px;
+	height: 58px;
+	content: '';
+	right: -140px;
+	position: absolute;
+	background: url("../images/arrow.png") no-repeat;
+}
+.small-box2{
+	margin: 0 ;
+	border: 10px solid #bd2426;
+}
+.small-box2:after{
+	display: none;
+}
+.small-box2 a{
+	color: #fff;
+}
+.small-box2 figure {
+	margin: 36px 0 15px;
+}
+.box2{
+	padding: 50px 0 0;
+	background: #168ccc;
+}
+.box2 ul{
+	margin: 0;
+	padding: 0 0 50px;
+	list-style: none;
+}
+.box2 ul li{
+	font-size: 26px;
+	padding: 0 10%;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: top;
+	border-right: 1px solid #33abec;
+}
+.box2 ul li span{
+	display: block;
+	font-weight: 200;
+	font-size: 16px;
+}
+.box2 ul li:last-child{
+	border: none;
+}
+.ip-box{
+	padding: 28px 0;
+	font-weight: 200;
+	box-shadow:0 13px 30px #1377ae inset;
+	border-top:1px solid #33abec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

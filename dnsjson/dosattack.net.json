@@ -1,0 +1,98 @@
+{ "serial": 3,
+  "ttl":    10,
+  "targeting": "country continent @ regiongroup region ip asn",
+  "logging": {
+     "stathat_api": "iU4OMFls2N9hPVR8"
+  },
+  "data" : {
+    "":  {
+	"a": [ ["172.106.22.69"] ],
+        "ns": { "geons1.dosattack.net.": null},
+        "mx": [ { "preference": 20, "mx": "mx.zoho.com.", "weight": 0 },
+                { "preference": 10, "mx": "mx2.zoho.com.", "weight": 1 }
+              ],
+        "txt": "google-site-verification=mTU9ddmpbOPgdUbrG1XBhVeygSM6QFWFTvlxSyX_iIU"
+    },
+    ".br": {
+       "a": [ [ "181.41.201.175" ] ]
+    },
+    "load": {
+       "a": [ [ "172.106.22.69" ] ]
+    },
+    "mx1": {
+       "a": [ [ "45.34.37.26" ] ]
+    },
+    "cache2.movies": {
+       "a": [ [ "45.119.209.18" ] ]
+    },
+    "cache3.movies": {
+       "a": [ [ "45.119.209.34" ] ]
+    },
+    "images.movies": {
+       "a": [ [ "104.219.237.26" ] ]
+    },
+    "movies": {
+       "a": [ [ "104.219.237.26" ] ]
+    },
+    "geons1": {
+       "a": [ [ "45.35.65.50" ] ]
+    },
+    "chat": {
+       "a": [ [ "45.63.84.223" ] ]
+    },
+    "ns1": {
+       "a": [ [ "45.35.65.50" ] ]
+    },
+    "stressns": {
+       "a": [ [ "45.34.37.26" ] ]
+    },
+    "i": {
+       "a": [ [ "45.79.206.120" ] ]
+    },
+    "lmao": {
+       "a": [ [ "104.128.235.97" ] ]
+    },
+    "mouse": {
+       "a": [ [ "45.32.81.176" ] ]
+    },
+    "music": {
+       "a": [ [ "45.63.84.223" ] ]
+    },
+    "naxsi": {
+       "a": [ [ "172.106.22.2" ] ]
+    },
+    "status": {
+       "a": [ [ "104.238.180.38" ] ]
+    },
+    "brotli": {
+       "a": [ [ "172.106.22.69" ] ]
+    },
+    "stressme": { "ns": { "stressns.dosattack.net.": null} },
+    "geodns": { "ns": { "ns1.dosattack.net.": null} },
+    "bar.north-america": { "a": [ ["8.8.6.6"] ], "txt": "This is for North America traffic." },
+    "bar.us": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA traffic." },
+    "bar.us-west": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA West Coast traffic." },
+    "bar.us-central": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA Central traffic." },
+    "bar.us-east": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA East Coast traffic." },
+    "bar.us-ca": { "a": [ ["8.8.6.6"] ], "txt": "This is for USA California traffic." },
+    "bar.europe": { "a": [ ["8.8.4.4"] ], "txt": "This is for EU traffic." },
+    "bar.as7922": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for Comcast traffic." },
+    "bar.as33651": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for Comcast traffic." },
+    "bar.[73.223.157.249]": { "a": [ ["8.8.4.4"] ], "txt": "This is specific for 73.223.157.249" },
+    "bar": { "a": [ ["8.8.8.8"] ], "txt": "Default lol" },
+    "datpixel": {"a": [ ["103.241.213.24"] ]},
+    "datpixel.europe": {"a": [ ["172.106.21.82"] ]},
+    "datpixel.us-east": {"a": [ ["172.106.21.82"] ]},
+    "datpixel.us-west": {"a": [ ["172.106.21.82"] ]},
+    "epic": {"a": [ ["198.27.64.207"] ]},
+    "epic.us-east": {"a": [ ["172.106.21.83"] ]},
+    "www": {
+      "alias": "",
+      "txt": "This is default traffic."
+    },
+    "www.europe": {
+      "alias": "",
+      "txt": "This is for EU traffic."
+    }
+  }
+}

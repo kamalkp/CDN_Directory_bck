@@ -1,0 +1,90 @@
+#!/bin/sh
+
+rm -rf /root/CDN/india/*
+rm -rf /root/CDN/brazil/*
+rm -rf /root/CDN/australia/*
+rm -rf /root/CDN/japan/*
+rm -rf /root/CDN/singapore/*
+rm -rf /root/CDN/southafrica/*
+rm -rf /root/CDN/vancouver/*
+rm -rf /root/CDN/eu_usa/*
+
+
+
+yes | cp -r /home/nginx/conf/ /root/CDN/india/
+yes | cp -r /home/nginx/conf/ /root/CDN/brazil/
+yes | cp -r /home/nginx/conf/ /root/CDN/australia/
+yes | cp -r /home/nginx/conf/ /root/CDN/japan/
+yes | cp -r /home/nginx/conf/ /root/CDN/singapore/
+yes | cp -r /home/nginx/conf/ /root/CDN/southafrica/
+yes | cp -r /home/nginx/conf/ /root/CDN/vancouver/
+yes | cp -r /home/nginx/conf/ /root/CDN/eu_usa/
+
+
+rm -rf /root/CDN/india/conf/sites/yard.conf
+rm -rf /root/CDN/brazil/conf/sites/yard.conf
+rm -rf /root/CDN/australia/conf/sites/yard.conf
+rm -rf /root/CDN/japan/conf/sites/yard.conf
+rm -rf /root/CDN/singapore/conf/sites/yard.conf
+rm -rf /root/CDN/southafrica/conf/sites/yard.conf
+rm -rf /root/CDN/vancouver/conf/sites/yard.conf
+rm -rf /root/CDN/eu_usa/conf/sites/yard.conf
+
+rm -rf /root/CDN/india/conf/sites/photon.conf
+rm -rf /root/CDN/brazil/conf/sites/photon.conf
+rm -rf /root/CDN/australia/conf/sites/photon.conf
+rm -rf /root/CDN/japan/conf/sites/photon.conf
+rm -rf /root/CDN/singapore/conf/sites/photon.conf
+rm -rf /root/CDN/southafrica/conf/sites/photon.conf
+rm -rf /root/CDN/vancouver/conf/sites/photon.conf
+rm -rf /root/CDN/eu_usa/conf/sites/photon.conf
+
+rm -rf /root/CDN/india/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/brazil/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/australia/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/japan/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/singapore/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/southafrica/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/vancouver/conf/sites/dosattack.net.conf
+rm -rf /root/CDN/eu_usa/conf/sites/dosattack.net.conf
+
+rm -rf /root/CDN/india/conf/sites/default.conf
+rm -rf /root/CDN/brazil/conf/sites/default.conf
+rm -rf /root/CDN/australia/conf/sites/default.conf
+rm -rf /root/CDN/japan/conf/sites/default.conf
+rm -rf /root/CDN/singapore/conf/sites/default.conf
+rm -rf /root/CDN/southafrica/conf/sites/default.conf
+rm -rf /root/CDN/vancouver/conf/sites/default.conf
+rm -rf /root/CDN/eu_usa/conf/sites/default.conf
+
+rm -rf /root/CDN/india/conf/sites/psychz.net.conf
+rm -rf /root/CDN/brazil/conf/sites/psychz.net.conf
+rm -rf /root/CDN/australia/conf/sites/psychz.net.conf
+rm -rf /root/CDN/japan/conf/sites/psychz.net.conf
+rm -rf /root/CDN/singapore/conf/sites/psychz.net.conf
+rm -rf /root/CDN/southafrica/conf/sites/psychz.net.conf
+rm -rf /root/CDN/vancouver/conf/sites/psychz.net.conf
+rm -rf /root/CDN/eu_usa/conf/sites/psychz.net.conf
+
+
+
+
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/india/conf/ root@103.78.121.2:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/brazil/conf/ root@181.41.201.175:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/australia/conf/ root@45.76.114.55:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/japan/conf/ root@45.76.48.30:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/singapore/conf/ root@45.77.34.118:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/southafrica/conf/ root@172.107.92.10:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/vancouver/conf/ root@68.168.30.2:/usr/local/nginx/conf/
+rsync -avz --delete -e 'ssh -i /root/id_rsa' /root/CDN/eu_usa/conf/ root@172.106.22.7:/usr/local/nginx/conf/
+
+
+ssh root@103.78.121.2 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@181.41.201.175 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@45.76.114.55 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@45.76.48.30 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@45.77.34.118 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@172.107.92.10 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@68.168.30.2 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+ssh root@172.106.22.7 -i /root/id_rsa /usr/local/nginx/sbin/nginx -s reload
+

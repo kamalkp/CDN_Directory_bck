@@ -1,0 +1,161 @@
+{ "serial": 3,
+  "ttl":    10,
+  "targeting": "country continent @ regiongroup region ip asn",
+  "logging": {
+     "stathat_api": "iU4OMFls2N9hPVR8"
+  },
+  "data" : {
+    "":  {
+	      "a": [ ["172.106.22.69"] ],
+        "ns": { "ns1.pokecdn.net.": null, "ns2.pokecdn.net.": null },
+        "txt": "google-site-verification=mTU9ddmpbOPgdUbrG1XBhVeygSM6QFWFTvlxSyX_iIU"
+    },
+    "ns1": {
+       "a": [ [ "172.106.172.2" ] ]
+    },
+    "ns2": {
+       "a": [ [ "172.106.172.3" ] ]
+    },
+    "deviceid": {
+       "a": [ [ "172.106.172.3" ] ]
+    },
+    "deviceid.asia": {
+       "a": [ [ "103.78.120.23" ] ]
+    },
+    "www": {
+      "alias": "",
+      "txt": "This is default traffic."
+    },
+    "www.europe": {
+      "alias": "",
+      "txt": "This is for EU traffic."
+    },
+    "psychz.in": {
+      "a": [ [ "103.78.121.4" ] ]
+    },
+    "psychz.cn": {
+      "a": [ [ "103.78.123.2" ] ]
+    },
+    "psychz.asia": {
+      "a": [ [ "103.78.120.4" ] ]
+    },
+    "psychz.oceania": {
+      "a": [ [ "103.78.120.4" ] ]
+    },
+    "psychz.br": {
+      "a": [ [ "181.41.219.13" ] ]
+    },
+    "psychz.za": {
+      "a": [ [ "165.73.240.130" ] ]
+    },
+    "psychz": { 
+      "a": [ [ "172.106.22.4" ] ]
+    },
+    "premium.in": {
+      "a": [ [ "103.78.121.7" ] ]
+    },
+    "premium.br": {
+      "a": [ [ "181.41.217.190" ] ]
+    },
+    "premium.cn": {
+      "a": [ [ "103.78.123.20" ] ]
+    },
+    "premium.asia": {
+      "a": [ [ "103.78.120.7" ] ]
+    },
+    "premium.oceania": {
+      "a": [ [ "103.78.120.7" ] ]
+    },
+    "premium.za": {
+      "a": [ [ "165.73.240.129" ] ]
+    },
+    "premium": {
+      "a": [ [ "172.106.22.7" ] ]
+    },
+    "photon.in": {
+      "a": [ [ "103.78.121.2" ] ]
+    },
+    "photon.cn": {
+      "a": [ [ "103.78.123.3" ] ]
+    },
+    "photon.br": {
+      "a": [ [ "181.41.217.232" ] ]
+    },
+    "photon.asia": {
+      "a": [ [ "103.78.120.2" ] ]
+    },
+    "photon.oceania": {
+      "a": [ [ "103.78.120.2" ] ]
+    },
+    "photon.za": {
+      "a": [ [ "165.73.240.131" ] ]
+    },
+    "photon": {
+      "a": [ [ "172.106.22.2" ] ]
+    },
+    "yard.in": {
+      "a": [ [ "103.78.121.3" ] ]
+    },
+    "yard.cn": {
+      "a": [ [ "103.78.123.4" ] ]
+    },
+    "yard.br": {
+      "a": [ [ "181.41.219.184" ] ]
+    },
+    "yard.asia": {
+      "a": [ [ "103.78.120.3" ] ]
+    },
+    "yard.oceania": {
+      "a": [ [ "103.78.120.3" ] ]
+    },
+    "yard.za": {
+      "a": [ [ "165.73.240.132" ] ]
+    },
+    "yard": {
+      "a": [ [ "172.106.22.3" ] ]
+    },
+    "photon.tw": {
+      "a": [ [ "103.78.123.3" ] ]
+    },
+    "psychz.tw": {
+      "a": [ [ "103.78.123.2" ] ]
+    },
+     "yard.tw": {
+      "a": [ [ "103.78.123.4" ] ]
+    },
+    "premium.tw": {
+      "a": [ [ "103.78.123.20" ] ]
+    },
+    "regular": {
+      "a": [ [ "172.106.22.7" ] ]
+    },
+    "2033": { "alias": "regular" },
+    "11087": { "alias": "regular" },
+    "11197.psychzcdn.com": { "alias": "premium" },
+    "extreme": {
+          "a": [ [ "172.106.21.108" ] ]
+    },
+    "extreme.extremebypass": {
+          "a": [ [ "37.187.129.80" ] ]
+    },
+"11440.jp-img.hdlyzc.net": { "alias": "regular" },
+"11440.us-img.hdlyzc.net": { "alias": "regular" },
+
+"11197.example.com": { "alias": "regular" },
+"11482.kevices.com": { "alias": "regular" },
+"11482.micfaves.com": { "alias": "regular" },
+"11314.crazyker.com": { "alias": "regular" }
+
+	,"11067.oole.org": { "alias": "regular" }
+	,"11429.my.letcdn.com": { "alias": "regular" }
+	,"11215.propebbles.com": { "alias": "regular" }
+	,"11448.yuanhost.cn": { "alias": "regular" }
+	,"11448.zhuhost.cn": { "alias": "regular" }
+
+	,"11540.axouch.com": { "alias": "regular" }
+	,"9408.rhodiumfloors.com": { "alias": "premium" }
+	,"11542.ptns.co": { "alias": "regular" }
+	,"11547.myblogpage.eu.org": { "alias": "regular" }
+	,"11548.huuthuan.net": { "alias": "regular" }
+  }
+}

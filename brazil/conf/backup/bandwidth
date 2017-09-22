@@ -1,0 +1,25 @@
+
+
+    server {
+        listen       172.106.22.2:80;
+        server_name  bandwidth.pokecdn.net;
+        gzip on;
+        gzip_disable "msie6";
+
+        gzip_vary on;
+        gzip_proxied any;
+        gzip_comp_level 6;
+        gzip_buffers 16 8k;
+        gzip_http_version 1.1;
+        gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript;
+	    testcookie off;
+        include /usr/local/nginx/conf/aes.conf;
+
+        include /usr/local/nginx/conf/bots.conf;
+
+          location /status11111afasdfasfdfasdf {
+              vhost_traffic_status_display;
+              vhost_traffic_status_display_format html;
+          }
+    }
+

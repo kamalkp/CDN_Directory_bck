@@ -1,0 +1,12 @@
+#!/bin/sh
+
+ssh root@103.78.121.2 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@181.41.201.175 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@45.76.114.55 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@45.76.48.30 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@45.77.34.118 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@172.107.92.10 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@68.168.30.2 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@172.106.22.7 -p 22122 -i /root/id_rsa  /root/purge
+ssh root@172.106.22.2 -p 22122 -i /root/id_rsa  /root/purge
+

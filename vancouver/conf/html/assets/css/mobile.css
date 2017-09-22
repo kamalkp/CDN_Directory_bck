@@ -1,0 +1,117 @@
+@media screen and (max-width: 1199px) {
+    .error-box{
+        padding: 30px 0 0;
+    }
+    .box1{
+        margin: 30px 0;
+    }
+    .small-box {
+        border: 5px solid #fff;
+        margin: 0 12% 0 0;
+        padding: 0 0 20px;
+        width: 23%;
+    }
+    .small-box2 {
+        margin: 0;
+        border: 5px solid #bd2426;
+    }
+    .box2{
+        padding: 30px 0 0;
+    }
+    .box2 ul li{
+        padding: 0 2%;
+    }
+    .box2 ul {
+        padding: 0 0 30px;
+    }
+    .ip-box{
+        padding: 20px 0;
+    }
+    .error-box h1{
+        font-size: 110px;
+        line-height: 110px;
+    }
+    .error-box .gateway{
+        margin:36px 0 0 10px;
+    }
+    .small-box::after{
+        right: -120px;
+    }
+}
+@media screen and (max-width: 991px){
+    .small-box::after {
+        background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat;
+        background-size: contain;
+        height: 28px;
+        right: -90px;
+        top: 103px;
+        width: 35px;
+    }
+    .error-box h1 {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .error-box h1 span {
+        font-size: 70px;
+    }
+    .error-box .gateway {
+        margin: 15px 0 0 10px;
+    }
+    .box2 ul li{
+        font-size: 22px;
+    }
+    .box2 ul li span{
+        font-size: 14px;
+    }
+    .small-box .checkmark, .small-box2 .close{
+        right: -43px;
+    }
+    body, select, input{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .error-box h1{
+        width: 100%;
+    }
+    .error-box .gateway {
+        margin: 0;
+    }
+    .box1 {
+        margin: 20px 0;
+    }
+    .small-box::after{
+        display: none;
+    }
+    .small-box {
+        margin: 10px 0;
+        padding: 0;
+        width: 390px;
+    }
+    .box2 ul li {
+        font-size: 20px;
+        padding: 0;
+        margin: 5px;
+        border: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .small-box{
+        width: 90%;
+    }
+    .error-box .gateway{
+        font-size: 25px;
+    }
+    .error-box h1 span {
+        font-size: 50px;
+    }
+    .error-box h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .small-box .checkmark, .small-box2 .close {
+        right: -32px;
+    }
+}

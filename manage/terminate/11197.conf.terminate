@@ -1,0 +1,292 @@
+#Qatest
+
+
+	location qa/test {
+		##access_control
+		
+		##layer_7
+		
+		##gzip
+		
+		##cache
+		  proxy_cache_key $host$uri;  proxy_cache_valid any 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000y ;proxy_cache_key $host$uri$is_args$args;proxy_cache_use_stale error timeout http_500 http_502 http_503 http_504;
+		proxy_pass http://11.22.33.44:80/$uri;
+	}
+		##custom_location
+
+        listen 172.106.22.7:80;
+        ##server_name
+        server_name Qatest  www.Qatest sub	park sub  sub	park sub ;	park;	Park1;	park1;
+        testcookie off;
+
+        ##control_access
+
+
+	
+        ##pagespeed
+
+
+        ##access_control
+
+
+
+        ##bandwidth
+
+
+    ##This is to force SSL rewrite, do this if SSL enabled
+    ##        rewrite ^ https://www.$server_name$request_uri? permanent;
+
+
+    ##gzip
+
+
+    ###botnet
+
+
+
+	include /usr/local/nginx/conf/bots.conf;
+
+
+    ###hotlink
+	include /usr/local/nginx/conf/hotlink.conf;
+
+
+
+
+
+        location ~* \.(jpg|jpeg|gif|png|css|js|mp4|woff)$ {
+            proxy_pass         http://127.0.0.1:6081;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   Client-ID        7155;
+            proxy_set_header   DeviceID         "www.Qatest.11197";
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        }
+
+        location / {
+            proxy_pass         http://11.22.33.44;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+
+
+    }
+##Qatest ends
+##Test
+    server{
+        listen 172.106.22.7:80;
+        ##server_name
+        server_name Test  www.Test Sub1	Park1 Sub1 ;	park1;
+        testcookie off;
+
+
+        ##pagespeed
+
+
+
+        ##bandwidth
+
+
+
+    ##This is to force SSL rewrite, do this if SSL enabled
+    ##        rewrite ^ https://www.$server_name$request_uri? permanent;
+
+
+    ##gzip
+
+
+    ###botnet
+
+
+
+	include /usr/local/nginx/conf/bots.conf;
+
+
+    ###hotlink
+	include /usr/local/nginx/conf/hotlink.conf;
+
+
+
+
+
+        location ~* \.(jpg|jpeg|gif|png|css|js|mp4|woff)$ {
+            proxy_pass         http://127.0.0.1:6081;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   Client-ID        7155;
+            proxy_set_header   DeviceID         "www.Test.11197";
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        }
+
+        location / {
+            proxy_pass         http://11.22.33.44;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+
+
+	##custom_location
+
+
+    }
+##Test ends
+##testing
+    server{
+        listen 172.106.22.7:80;
+        ##server_name
+        server_name testing  www.testing;	park1;
+        testcookie off;
+
+
+        ##pagespeed
+
+
+
+        ##bandwidth
+
+
+
+    ##This is to force SSL rewrite, do this if SSL enabled
+    ##        rewrite ^ https://www.$server_name$request_uri? permanent;
+
+
+    ##gzip
+	gzip on;	gzip_disable "msie6"; 	gzip_vary on;	gzip_proxied any;	gzip_comp_level 6;	gzip_buffers 16 8k;	gzip_http_version 1.1;	gzip_types text/html text/css text/plain text/xml text/x-component text/javascript application/x-javascript application/javascript application/json application/manifest+json application/xml application/xhtml+xml application/rss+xml application/atom+xml application/vnd.ms-fontobject application/x-font-ttf application/x-font-opentype application/x-font-truetype image/svg+xml image/x-icon image/vnd.microsoft.icon font/ttf font/eot font/otf font/opentype ;
+
+    ###botnet
+
+
+
+	include /usr/local/nginx/conf/bots.conf;
+
+
+    ###hotlink
+	include /usr/local/nginx/conf/hotlink.conf;
+
+
+
+
+
+        location ~* \.(jpg|jpeg|gif|png|css|js|mp4|woff)$ {
+            proxy_pass         http://127.0.0.1:6081;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   Client-ID        7155;
+            proxy_set_header   DeviceID         "www.testing.11197";
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        }
+
+        location / {
+            proxy_pass         http://11.22.33.44;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+
+
+	##custom_location
+
+
+	location /path/test {
+		##access_control
+		
+		##layer_7
+		
+		##gzip
+		
+		##cache
+		  proxy_cache_valid any 123ms ;
+		proxy_pass http://11.22.33.44:80/$uri;
+	}
+		##custom_location
+
+
+    }
+##testing ends
+##quality
+    server{
+        listen 172.106.22.7:80;
+        ##server_name
+        server_name quality  www.quality sub1	park1    park2 ;
+        testcookie off;
+
+
+        ##pagespeed
+
+
+
+        ##bandwidth
+
+
+
+    ##This is to force SSL rewrite, do this if SSL enabled
+    ##        rewrite ^ https://www.$server_name$request_uri? permanent;
+
+
+    ##gzip
+
+
+    ###botnet
+
+
+
+
+    ###hotlink
+	include /usr/local/nginx/conf/hotlink.conf;
+
+
+
+        location ~* \.(jpg|jpeg|gif|png|css|js|mp4|woff)$ {
+            proxy_pass         http://127.0.0.1:6081;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   Client-ID        7155;
+            proxy_set_header   DeviceID         "www.quality.11197";
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        }
+
+        location / {
+            proxy_pass         http://11.22.33.44;
+            proxy_redirect     off;
+
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+
+
+	##custom_location
+
+
+	location qa/test {
+		##access_control
+		
+		##layer_7
+		
+		##gzip
+		
+		##cache
+		  proxy_cache_key $host$uri;
+		proxy_pass http://11.22.33.44:80/$uri;
+	}
+		##custom_location
+
+
+    }
+##quality_ends
